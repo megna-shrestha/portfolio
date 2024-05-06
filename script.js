@@ -1,4 +1,4 @@
-document.getElementById("b1").addEventListener("click", function() {
+document.getElementById("download").addEventListener("click", function() {
     // URL of the file to download
     var fileUrl = "	https://megna-shrestha.github.io/portfolio/assets/CV.pdf";
 
