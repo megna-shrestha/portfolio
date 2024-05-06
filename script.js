@@ -7,7 +7,7 @@ document.getElementById("download").addEventListener("click", function() {
     downloadLink.href = fileUrl;
 
     // Setting the filename for the downloaded file
-    downloadLink.download = "filename.ext";
+    downloadLink.download = "CV.pdf";
 
     // Appending the anchor element to the DOM
     document.body.appendChild(downloadLink);
