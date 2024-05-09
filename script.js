@@ -29,26 +29,35 @@ document.getElementById("download").addEventListener("click", function() {
 
 // --------------------------------------mouseenteronAboutMePage---------------------------------------------------
   document.getElementById('aboutmepage').addEventListener('mouseenter', function() {
-    console.log("hello")
+  
     document.getElementById('aboutme1').style.backgroundColor = '#6CBBCC';
+    document.getElementById('uicons').style.color = 'white'; 
 
   })
   document.getElementById('aboutmepage').addEventListener('mouseleave', function() {
     document.getElementById('aboutme1').style.backgroundColor = '';
+    document.getElementById('uicons').style.color='#6CBBCC';
   });
 
   // --------------------------------------mouseenteronMyWorksPage---------------------------------------------------
 
   document.getElementById('workpage').addEventListener('mouseenter', function() {
     document.getElementById('work1').style.backgroundColor = '#6CBBCC';
+    document.getElementById('oicons').style.color = 'white'; 
 
   })
   document.getElementById('workpage').addEventListener('mouseleave', function() {
     document.getElementById('work1').style.backgroundColor = '';
+    document.getElementById('oicons').style.color = '#6CBBCC'; 
   });
 
+// --------------------------------------------------Onclickfunctions----------------------------------------------
+document.getElementById('aboutme1').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    document.getElementById('aboutmepage').scrollIntoView({ behavior: 'smooth' }); // Scroll to the about section
+  }); 
 
-  document.getElementById('work1').addEventListener('click', function(event) {
+document.getElementById('work1').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent default link behavior
     document.getElementById('workpage').scrollIntoView({ behavior: 'smooth' }); // Scroll to the about section
   });
