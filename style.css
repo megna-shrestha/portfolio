@@ -12,7 +12,7 @@
   
 }
 .right-div {
-     grid-area: right; 
+     
     
 width: 80px;
 margin-right : 10px;
@@ -34,13 +34,6 @@ overflow: scroll;
     background-color: white;
     border-radius: 10px;
     padding-top: 10px;
-    height: 420px;
-}
-.background2{
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 10px;
-    margin-top: 10px;
     height: 420px;
 }
 
@@ -247,6 +240,9 @@ h2{
 
 .flex{
     display: flex;
+   
+
+ 
 }
 
 .uiux, .webdev, .graphic{
@@ -256,22 +252,26 @@ h2{
     text-align: center;
     padding-top: 10px;
     border-radius: 10px;
+    
 
 }
 .uiux {
     width:250px;
     margin-left: 33px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 .webdev{
+   
     width:250px;
-    margin-left: 10px;
+
     margin-bottom: 10px;
 }
 
 .graphic{
+    
     width: 510px;
-    margin-left: 33px;
+    margin-left: 32px;
     margin-top: 5px;
 }
 .icon-window{
@@ -290,12 +290,6 @@ h2{
     height: 60px;
     border-radius: 10px;
     box-shadow: inset 5px 5px 10px 0 rgba(0, 0, 0, 0.1), -5px -5px 15px 0 rgba(255, 255, 255, 0.7);
-}
-.adjust{
-    margin-left: 20px;
-    
-
-      
 }
 .wadjust{
     margin-left: 5px;
@@ -400,3 +394,61 @@ i{
 margin-top: 10px;
     background-color: white;
 }
+
+
+/* ----------------------------------------------------------works page------------------------------------------ */
+
+
+.background2{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 480px;
+}
+
+.workbox{
+    background-color: #F5F5F5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+   border-radius: 15px;
+    
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+
+.workgrid{
+    display: grid;
+    grid-template-areas: 'one two '
+                        'three four'
+                        'five six';
+
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+  
+
+
+}
+
+
+  

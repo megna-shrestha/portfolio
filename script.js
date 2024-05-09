@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Your code to manipulate the DOM goes here
+    console.log("DOM content loaded");
+});
+
 document.getElementById("download").addEventListener("click", function() {
     // URL of the file to download
     var fileUrl = "	https://megna-shrestha.github.io/portfolio/assets/CV.pdf";
@@ -18,3 +23,33 @@ document.getElementById("download").addEventListener("click", function() {
     // Removing the anchor element from the DOM
     document.body.removeChild(downloadLink);
 });
+
+
+
+
+// --------------------------------------mouseenteronAboutMePage---------------------------------------------------
+  document.getElementById('aboutmepage').addEventListener('mouseenter', function() {
+    console.log("hello")
+    document.getElementById('aboutme1').style.backgroundColor = '#6CBBCC';
+
+  })
+  document.getElementById('aboutmepage').addEventListener('mouseleave', function() {
+    document.getElementById('aboutme1').style.backgroundColor = '';
+  });
+
+  // --------------------------------------mouseenteronMyWorksPage---------------------------------------------------
+
+  document.getElementById('workpage').addEventListener('mouseenter', function() {
+    document.getElementById('work1').style.backgroundColor = '#6CBBCC';
+
+  })
+  document.getElementById('workpage').addEventListener('mouseleave', function() {
+    document.getElementById('work1').style.backgroundColor = '';
+  });
+
+
+  document.getElementById('work1').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    document.getElementById('workpage').scrollIntoView({ behavior: 'smooth' }); // Scroll to the about section
+  });
+  
