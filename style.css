@@ -43,14 +43,16 @@ html[data-theme="semiDark"]{
     width: 200px;
     margin-left : 10px;
     color:var(--text);
-   
+
   
+
 }
 .right-div {
-     
+
     color:var(--text);
 width: 80px;
 margin-right : 10px;
+position:fixed;
 }
 
 .mid-div { 
@@ -62,7 +64,7 @@ margin-right : 10px;
 /* overflow-y: auto; */
 flex: 1;
 scrollbar-width: thin;
-overflow: scroll;
+overflow: auto;
 
 }
 
@@ -416,6 +418,8 @@ margin-left: 40px;
     position: relative;
 }
 
+
+
 /* -------------------------------------right section----------------------------------------------------- */
 .aboutme, .resume,.Works,.Contact,.Blog,.game{
     background-color: var(--background);
@@ -503,7 +507,33 @@ margin-top: 10px;
 
 .subtext{
     font-size: 12px;
+ 
 }
+.section{
+    position: relative;
+    margin-top: -125px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    height: 102px;
+width: 250px;
+border-radius: 15px;
+padding-top: 20px;
+
+}
+a{
+    text-decoration: none;
+}
+.workimg{
+
+height: 120px;
+width: 250px;
+border-radius: 15px;
+z-index: -1;
+margin-top: -20px;
+
+
+}
+
 .one{
     grid-area: one;
 }
