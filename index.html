@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
+ 
     <title>Megna Shrestha</title>
 </head>
 <body>
@@ -65,14 +65,29 @@
 <!--------------------------------------------------Middle Section-------------------------------------------->
 <div class="mid-div">
     <div class="background" id="aboutmepage" >
+        <div class="herosec">
+            <div class="sec1">
+                <h2 class="hs1"> About Me</h2>
 
-       <h2 class="hs"> About Me</h2>
+            <p class="para">Hello, I am Megna Shrestha 
+            </p>
+            <p class="para1 ">Currently a final year IT student and a frontend designing / developing enthusiast.
+                My primary interests lie in UI/UX, frontend development, branding, and graphics .
+                I have an athletic side which loves to swim . Apart of these I like to paint, draw mandala and travel.
+                I consider myself as a  ‘forever learner’  and tireless seeker of knowledge.</p>
+                <div class="download-button"id="button0">
+                    <button type="button" class="bwhite" id="download">   
+                         &nbsp;Explore more</button>  <i class="	fa fa-chevron-circle-down" id="icons"></i> 
+                     </div>
+            </div>
+          
+               
+            <div class="sec2">
+                <img src="/photo/hie.png"  class="me">
+            </div>
+        </div>
 
-        <p class="para1">Hello, I am Megna Shrestha currently a final year IT student and a frontend designing / developing enthusiast.
-            My primary interests lie in UI/UX, frontend development, branding, and graphics .
-            I have an athletic side which loves to swim . Apart of these I like to paint, draw mandala and travel.
-            I consider myself as a  ‘forever learner’  and tireless seeker of knowledge.
-        </p>
+       
  
        <h2 class="hs">What I do!</h2>
         <div class="flex">
@@ -122,19 +137,27 @@
 
         <div class="workgrid">
             <div class="workbox one">
-            <p>Graphic Design</p>
+            <p>Deerwalk AutoServices <br>
+                Mobile app</p>
+                <p  class="subtext">UI/UX</p>
             </div>
 
             <div class="workbox two">
-                    <p>Graphic Design</p>
+                <p>Deerwalk Admin <br>
+                     Dashboard</p>
+                     <p class="subtext">UI/UX</p>
             </div>
 
             <div class="workbox three">
-                        <p>Graphic Design</p>
+                <p>Ryan Two Wheeler <br>
+                    e-scooter</p>
+                    <p class="subtext">Graphic Design</p>
             </div>
 
             <div class="workbox four">
-                <p>Graphic Design</p>
+                <p>Ryan Three Wheeler <br>
+                    e-tempo</p>
+                    <p class="subtext">Graphic Design</p>
             </div>
 
             <div class="workbox five">
@@ -182,19 +205,60 @@
         
       
         <div class="game">
-            <i class="fa fa-gamepad icons" class="icons"></i> 
-            <p>Game</p>
+            <button onclick="myFunction()" class="dark" id="dark">  <i class="fa fa-envelope-o icons" id="cicons"></i><p>Dark</p></button>
+            <!-- <button onclick="setThemeSemiDark()" class="dark" id="dark">semiDark</button> -->
+            <!-- <i class="fa fa-gamepad icons" class="icons"></i> 
+            <p>Game</p> -->
         </div>
 
+        <!-- <div class="game">
+            <i class="fa fa-gamepad icons" class="icons"></i> 
+            <p>Game</p>
+        </div> -->
+        
         <div class="download-button" id="button1">
             <button type="button" class="b2">Let's Talk !</button>
         </div>
 
 </div>
-   
+
 </div>
 
 <script src="script.js"></script>
+<script>
+    function setThemeSemiDark(){
+        const currentTheme=document.documentElement.getAttribute("data-theme");
+     const newTheme="semiDark";
+    //  const newTheme=currentTheme=="light"?"dark":"light";
+     document.documentElement.setAttribute("data-theme",newTheme)
+
+    }
+    var currentTh="light";
+    function myFunction() {
+     const currentTheme=document.documentElement.getAttribute("data-theme");
+    //  const newTheme="dark";
+    // console.log(currentTheme);
+    //  const newTheme=currentTheme=="light"?"dark":"light";
+    let newTheme="dark";
+    if (currentTheme=="light"){
+        newTheme="dark";
+    }
+    else {
+        newTheme="light";
+    }
+    console.log("newTheme",newTheme);
+
+     document.documentElement.setAttribute("data-theme",newTheme)
+    
+        // var element = document.body;
+        // element.classList.toggle("darkmode");
+     }
+    //  function changeColorfunction(idofwhichcolortobechanged){
+    //     idofwhichcolortobechanged.  
+    //  }
+
+    //  document.getElementById("dark").addEventListener("click", myFunction);
+</script>
 
 </body>
 </html>

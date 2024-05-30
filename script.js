@@ -1,9 +1,12 @@
+console.log("firststep");
 document.addEventListener("DOMContentLoaded", function() {
+
     // Your code to manipulate the DOM goes here
     console.log("DOM content loaded");
 });
 
 document.getElementById("download").addEventListener("click", function() {
+  debugger
     // URL of the file to download
     var fileUrl = "	https://megna-shrestha.github.io/portfolio/assets/CV.pdf";
 
@@ -28,13 +31,16 @@ document.getElementById("download").addEventListener("click", function() {
 
 
 // --------------------------------------mouseenteronAboutMePage---------------------------------------------------
-  document.getElementById('aboutmepage').addEventListener('mouseenter', function() {
+
+var aboutmePage = document.getElementById("aboutmepage");
+
+aboutmePage.addEventListener('mouseenter', function() {
   
     document.getElementById('aboutme1').style.backgroundColor = '#6CBBCC';
     document.getElementById('uicons').style.color = 'white'; 
 
   })
-  document.getElementById('aboutmepage').addEventListener('mouseleave', function() {
+  aboutmePage.addEventListener('mouseleave', function() {
     document.getElementById('aboutme1').style.backgroundColor = '';
     document.getElementById('uicons').style.color='#6CBBCC';
   });
