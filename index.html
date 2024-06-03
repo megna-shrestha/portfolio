@@ -197,19 +197,19 @@
 <div class="slideshow">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="photo/esootydribble.png" style="width:60%">
+          <img src="photo/esootydribble.png"  class="timg">
    
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="./photo/visting card.jpg" style="width:60%">
+          <img src="./photo/visting card.jpg"  class="timg">
 
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="./photo/automobile web.jpg" style="width:60%">
+          <img src="./photo/automobile web.jpg"  class="timg">
         
         </div>
     </div>
@@ -227,13 +227,29 @@
 
 <div class="blogs" id="blogpage">  
     <h2 class="hs4"> Blogs</h2>
+    <div class="comingSoon">
+        <p>Coming soon !!!</p>
+        
+    </div>
 
     
 </div>
 
 <div class="blogs" id="contactmepage">  
     <h2 class="hs4"> Contact Me</h2>
-    
+    <div class="form"> 
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="emailt" name="emailt" required><br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <br><br>
+        <button type="submit">Send Message</button>
+    </form></div>
     
 </div>
         
@@ -244,12 +260,13 @@
 <!--------------------------------------------------Right section-------------------------------------------->
 <div class="right-div">
 
-    <div  id="a1">
+    <div class="about" id="a1">
     <div class="aboutme" id="aboutme1">
   
         <i class="fa fa-user icons" id="uicons"></i>
             <p>About me</p>
-        </div></div>
+        </div>
+    </div>
 
 
      <div id="w1">
@@ -302,6 +319,7 @@
 </div>
 
 <script src="script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     function setThemeSemiDark(){
         const currentTheme=document.documentElement.getAttribute("data-theme");

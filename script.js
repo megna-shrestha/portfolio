@@ -152,3 +152,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+//  -------------------------------------------------contactMePage----------------------------------------------------
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const senderEmail = document.getElementById('emailt').value;
+  const message = document.getElementById('message').value;
+
+  const subject = encodeURIComponent('Contact Form Message from ' + name);
+  const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + senderEmail + '\n\nMessage:\n' + message);
+  
+  window.location.href = `mailto:megna.sth1@gmail.com?subject=${subject}&body=${body}`;
+});
+
+

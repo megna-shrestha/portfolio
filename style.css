@@ -488,28 +488,30 @@ margin-top: 10px;
 #a1 :hover {
     background-color:#f3f9fd;
     transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px */
 
 }
 #r1 :hover {
     background-color:#f3f9fd;
     transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px */
 
 }
 #w1 :hover{
     background-color:#f3f9fd;
     transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px */
 }
 #b1 :hover {
     background-color:#f3f9fd;
     transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px}
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px */
+}
 #c1 :hover {
     background-color:#f3f9fd;
     transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px}
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px */
+}
 
 /* ----------------------------------------------------------works page------------------------------------------ */
 
@@ -611,6 +613,11 @@ margin-top: -20px;
     color: var(--blue);
     margin-left: 30px;
 }
+
+.timg{
+    border-radius: 8px;
+    width: 250px;
+}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -621,7 +628,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   
-  padding-left: 180px;
+  padding-left: 170px;
 
   
 }
@@ -667,8 +674,8 @@ img {vertical-align: middle;}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 8px;
+  width: 8px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -677,7 +684,9 @@ img {vertical-align: middle;}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--blue);
+  height: 10px;
+  width: 10px;
 }
 
 /* Fading animation */
@@ -706,4 +715,38 @@ img {vertical-align: middle;}
     text-align: center;
     color: var(--blue);
     margin-left: 30px;
+}
+
+.comingSoon{
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-family: ProximaNovaextra;
+    font-size: 48px;
+    margin: 20px;
+    padding-top: 20px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+
+/* ------------------------------------------------contactme ---------------------------------------------------------*/
+
+.form{
+    padding-left: 30px;
+}
+
+#name{
+    width:400px;
+    margin-left: 20px;
+}
+#emailt{
+    width: 400px;
+    margin-left: 24px;
+}
+
+#message{
+    width: 400px;
+    height: 50px;
 }
